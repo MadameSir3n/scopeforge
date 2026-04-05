@@ -1,0 +1,129 @@
+{
+  "name": "TryHackMe Training Scope",
+  "description": "Scope configuration for TryHackMe learning platform environments",
+  "version": "1.0",
+  "id": "preset-tryhackme",
+  "created_at": "2025-01-01T00:00:00Z",
+  "updated_at": "2025-01-01T00:00:00Z",
+  "status": "preset",
+  "authorized": true,
+  "business_hours_only": false,
+  "targets": {
+    "domains": [
+      "*.tryhackme.com",
+      "tryhackme.com"
+    ],
+    "ips": [
+      "10.10.0.0/16",
+      "10.200.0.0/16"
+    ],
+    "urls": [
+      "https://tryhackme.com/room/*",
+      "http://10.10.*.*:*/*"
+    ],
+    "networks": [
+      "10.10.0.0/16",
+      "10.200.0.0/16"
+    ]
+  },
+  "exclusions": {
+    "domains": [
+      "billing.tryhackme.com",
+      "admin.tryhackme.com",
+      "internal.tryhackme.com"
+    ],
+    "ips": [
+      "10.10.0.1",
+      "10.200.0.1"
+    ],
+    "urls": [
+      "https://tryhackme.com/billing/*",
+      "https://tryhackme.com/admin/*"
+    ],
+    "networks": []
+  },
+  "legal_constraints": [
+    "Testing limited to assigned room instances only",
+    "Do not attack TryHackMe infrastructure",
+    "Do not interfere with other users' instances",
+    "Follow the platform's terms of service",
+    "Report platform vulnerabilities through proper channels"
+  ],
+  "regulatory_requirements": [
+    "GDPR compliance for EU users"
+  ],
+  "rate_limiting": {
+    "enabled": true,
+    "requests_per_second": 15,
+    "burst_limit": 75
+  },
+  "testing_methods": {
+    "allowed": [
+      "reconnaissance",
+      "vulnerability_scanning",
+      "penetration_testing",
+      "manual_testing",
+      "exploitation",
+      "post_exploitation",
+      "privilege_escalation",
+      "lateral_movement",
+      "persistence",
+      "evasion_techniques"
+    ],
+    "prohibited": [
+      "attacks_on_other_users",
+      "platform_infrastructure_attacks",
+      "ddos_testing",
+      "resource_exhaustion"
+    ]
+  },
+  "reporting": {
+    "format": "json",
+    "include_remediation": true,
+    "severity_threshold": "info",
+    "learning_focused": true,
+    "writeup_encouraged": true
+  },
+  "contact_info": {
+    "primary_contact": "support@tryhackme.com",
+    "emergency_contact": "support@tryhackme.com",
+    "notification_email": "support@tryhackme.com"
+  },
+  "compliance": {
+    "pci_dss": false,
+    "hipaa": false,
+    "gdpr": true,
+    "sox": false
+  },
+  "training_environment": {
+    "isolated": true,
+    "reset_schedule": "on_demand",
+    "multi_user": false,
+    "vm_based": true,
+    "instance_timeout": "1 hour",
+    "difficulty_levels": [
+      "easy",
+      "medium",
+      "hard",
+      "insane"
+    ],
+    "categories": [
+      "web",
+      "crypto",
+      "forensics",
+      "reverse_engineering",
+      "privilege_escalation",
+      "network",
+      "osint",
+      "miscellaneous"
+    ]
+  },
+  "metadata": {
+    "created_by": "TryHackMe Team",
+    "organization": "TryHackMe",
+    "project_name": "Cyber Security Training Platform",
+    "engagement_type": "training",
+    "estimated_duration": "self_paced"
+  }
+}
+

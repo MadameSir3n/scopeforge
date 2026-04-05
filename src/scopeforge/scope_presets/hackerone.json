@@ -1,0 +1,103 @@
+{
+  "name": "HackerOne Bug Bounty Scope",
+  "description": "Standard scope configuration for HackerOne bug bounty programs",
+  "version": "1.0",
+  "id": "preset-hackerone",
+  "created_at": "2025-01-01T00:00:00Z",
+  "updated_at": "2025-01-01T00:00:00Z",
+  "status": "preset",
+  "authorized": true,
+  "business_hours_only": false,
+  "targets": {
+    "domains": [
+      "*.hackerone.com",
+      "hackerone.com"
+    ],
+    "ips": [],
+    "urls": [
+      "https://hackerone.com/*",
+      "https://api.hackerone.com/*"
+    ],
+    "networks": []
+  },
+  "exclusions": {
+    "domains": [
+      "*.internal.hackerone.com",
+      "admin.hackerone.com"
+    ],
+    "ips": [],
+    "urls": [
+      "https://hackerone.com/admin/*",
+      "https://hackerone.com/internal/*"
+    ],
+    "networks": []
+  },
+  "legal_constraints": [
+    "Do not access or modify data belonging to other users",
+    "Do not perform any attacks that could degrade service availability",
+    "Do not use automated scanners without prior approval",
+    "Report findings only through HackerOne platform"
+  ],
+  "regulatory_requirements": [
+    "GDPR compliance for EU user data",
+    "CCPA compliance for California users"
+  ],
+  "rate_limiting": {
+    "enabled": true,
+    "requests_per_second": 5,
+    "burst_limit": 25
+  },
+  "testing_methods": {
+    "allowed": [
+      "reconnaissance",
+      "vulnerability_scanning",
+      "penetration_testing",
+      "manual_testing",
+      "source_code_analysis"
+    ],
+    "prohibited": [
+      "social_engineering",
+      "physical_access",
+      "dos_testing",
+      "data_destruction",
+      "spam_testing"
+    ]
+  },
+  "reporting": {
+    "format": "hackerone",
+    "include_remediation": true,
+    "severity_threshold": "low",
+    "disclosure_timeline": "90_days"
+  },
+  "contact_info": {
+    "primary_contact": "security@hackerone.com",
+    "emergency_contact": "security@hackerone.com",
+    "notification_email": "security@hackerone.com"
+  },
+  "compliance": {
+    "pci_dss": false,
+    "hipaa": false,
+    "gdpr": true,
+    "sox": true
+  },
+  "bounty_program": {
+    "enabled": true,
+    "min_payout": 100,
+    "max_payout": 10000,
+    "currency": "USD",
+    "severity_multipliers": {
+      "critical": 4.0,
+      "high": 2.0,
+      "medium": 1.0,
+      "low": 0.5
+    }
+  },
+  "metadata": {
+    "created_by": "HackerOne Security Team",
+    "organization": "HackerOne Inc.",
+    "project_name": "Public Bug Bounty Program",
+    "engagement_type": "bug_bounty",
+    "estimated_duration": "ongoing"
+  }
+}
+

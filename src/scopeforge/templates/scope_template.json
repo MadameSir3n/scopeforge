@@ -1,0 +1,66 @@
+{
+  "name": "Default Scope Template",
+  "description": "A comprehensive template for defining security testing scope",
+  "version": "1.0",
+  "id": "template-default",
+  "created_at": "2025-01-01T00:00:00Z",
+  "updated_at": "2025-01-01T00:00:00Z",
+  "status": "template",
+  "authorized": false,
+  "business_hours_only": false,
+  "targets": {
+    "domains": [],
+    "ips": [],
+    "urls": [],
+    "networks": []
+  },
+  "exclusions": {
+    "domains": [],
+    "ips": [],
+    "urls": [],
+    "networks": []
+  },
+  "legal_constraints": [],
+  "regulatory_requirements": [],
+  "rate_limiting": {
+    "enabled": true,
+    "requests_per_second": 10,
+    "burst_limit": 50
+  },
+  "testing_methods": {
+    "allowed": [
+      "reconnaissance",
+      "vulnerability_scanning",
+      "penetration_testing"
+    ],
+    "prohibited": [
+      "social_engineering",
+      "physical_access",
+      "dos_testing"
+    ]
+  },
+  "reporting": {
+    "format": "json",
+    "include_remediation": true,
+    "severity_threshold": "medium"
+  },
+  "contact_info": {
+    "primary_contact": "",
+    "emergency_contact": "",
+    "notification_email": ""
+  },
+  "compliance": {
+    "pci_dss": false,
+    "hipaa": false,
+    "gdpr": false,
+    "sox": false
+  },
+  "metadata": {
+    "created_by": "",
+    "organization": "",
+    "project_name": "",
+    "engagement_type": "internal",
+    "estimated_duration": "1 week"
+  }
+}
+
