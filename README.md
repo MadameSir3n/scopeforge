@@ -48,9 +48,22 @@ ScopeForge ingests raw scope definitions from any format or platform, normalizes
 ```bash
 git clone https://github.com/MadameSir3n/scopeforge.git
 cd scopeforge
+pip install -r requirements.txt
 pip install -e .
+python main.py parse "*.acme.com" "10.0.0.0/8"
+```
+
+Run tests:
+
+```bash
 python -m pytest tests/ -v
 ```
+
+## Known Limitations
+
+- Platform import adapters (HackerOne, Bugcrowd) require live API keys for full sync
+- Some components are still being refined
+- This is an active development system
 
 ## Sample Test Output
 
