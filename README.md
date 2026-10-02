@@ -2,6 +2,8 @@
 
 A scope management library and CLI for bug bounty hunters that parses targets from any format, validates legal boundaries in real time, and prevents accidental out-of-scope testing.
 
+> **Hiring/portfolio quick view:** see [PORTFOLIO.md](PORTFOLIO.md) for a recruiter-friendly case study of the Python security tooling, scope validation, testing, and safety-first automation demonstrated in this repository.
+
 ---
 
 ## Problem
